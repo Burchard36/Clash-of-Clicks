@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Body of the thing-->
+<html>
+
+  <!-- Head of the document-->
+  <head>
+    <title> Clash of clicks</title>
+	<link rel="stylesheet" href="index.css">
+  </head>
+  
+  <!-- Body of the document -->
+  <body>
+  
+    <div class="bodyOverlay"></div>
+  
+    <!-- This is the login area-->
+	<div class="loginPanel" id="loginPanel">
+	  <h4 class="loginLabel">Login</h4>
+	  <h4 class="usernameLabel">Username</h4>
+	  <input class="usernameInput" id="loginUsername" type="text" placeholder="Username">
+	  <h4 class="passwordLabel">Password</h4>
+	  <input class="passwordInput" id="loginPassword" type="password" placeholder="Password">
+	  <button class="loginButton" onclick="playerLogin()">Login!</button>
+	  <button class="registerButton" onclick="switchToRegister()">Register!</button>
+	</div>
+  	<div class="registerPanel" id="registerPanel">
+  	  <h4 class="loginLabel">Register</h4>
+  	  <h4 class="usernameLabel">Username</h4>
+	  <input class="usernameInput" id="registerUsername" type="text" placeholder="Username">
+	  <h4 class="passwordLabel">Password</h4>
+	  <input class="passwordInput" id="registerPassword" type="password" placeholder="Password">
+	  <h4 class="emailLabel">Email</h4>
+	  <input class="emailInput" id="registerEmail" type="email" placeholder="Email">
+  	  <button class="rregisterButton" onclick="registerPlayer()">Register!</button>
+  	  <button class="lloginButton" onclick="switchToLogin()">Login!</button>
+	</div>
+	<div class="loggedInAs" id="loggedInAs">
+	    <h4 class="loggedInAsLabel" id="loggedInAsLabel">Logged in as:</h4>
+		<p class="loggedInDataName" id="loggedInDataName">null</p>
+		<button class="logoutButton" onclick="logout()">Logout</button>
+	</div>
+	
+	<div class="sidebarContainer">
+	  
+	<button class="castleButton" id="button" onclick="goToCastlePage()">Play Now!</button>
+	<button class="castleButton" id="button">News</button>
+	<button class="castleButton" id="button">Dev Blog</button>
+	<button class="castleButton" id="button">Game Guide</button>
+	</div>
+	  
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p style="color: red;" id="modalText"></p>
+    </div>
+	
+    <!-- This is for JQuery import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Import Socket.io-->	
+    <script type="text/javascript" src="This link is removed for security reasons"></script>
+	<!-- This is our own javascript-->
+	<script src="index.js"></script>
+  </body>
+  
+</html>
