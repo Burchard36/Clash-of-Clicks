@@ -1,0 +1,329 @@
+body {
+	background-image: url(background.JPG);
+	background-size: cover;
+	padding: 0px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+h4 {
+	font-family: Comic Sans MS;
+	text-align: center;
+}
+
+.bodyOverlay {
+	position: relative;
+	width: 1375px;
+	height: 630px;
+	background: rgb(22, 22, 22, 0.8);
+	right: 10px;
+	bottom: 10px;
+}
+
+.loginPanel {
+	position: relative;
+	background: #6d6d6d;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	border-top: 3px solid #4cb7ff;
+	width: 250px;
+	height: 155px;
+	bottom: 610px;
+	left: 1065px;
+	box-shadow: 7px 7px 30px black;
+}
+
+.loginLabel {
+	position: relative;
+	bottom: 25px;
+	border-bottom: 1px solid black;
+}
+
+.usernameLabel {
+	position: relative;
+	right: 95px;
+	font-size: 15px;
+	bottom: 20px;
+}
+
+.usernameInput {
+	position: relative;
+	left: 75px;
+	bottom: 57px;
+	border-radius: 5px;
+	outline: none;
+    border: 1px solid black;
+}
+
+.passwordLabel {
+	position: relative;
+	right: 95px;
+	font-size: 15px;
+	bottom: 65px;
+}
+
+.passwordInput {
+	position: relative;
+	left: 75px;
+	bottom: 102px;
+	border-radius: 5px;
+	outline: none;
+    border: 1px solid black;
+}
+
+.loginButton {
+	outline: none;
+	position: relative;
+	font-family: Comic Sans MS;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #1772c1;
+	background: linear-gradient(#1a81db, #1772c1);
+	border-radius: 5px;
+	bottom: 65px;
+	right: 125px;
+}
+
+.loginButton:active {
+	background: linear-gradient(#1772c1, #1a81db);
+}
+
+.registerButton {
+	outline: none;
+	position: relative;
+	font-family: Comic Sans MS;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #d87306;
+	background: linear-gradient(#f79d36, #e29031);
+	border-radius: 5px;
+	bottom: 95px;
+	left: 135px;
+}
+
+.registerButton:active {
+	background: linear-gradient(#e29031, #f79d36);
+}
+
+.registerPanel {
+	display: none;
+	position: relative;
+	background: #6d6d6d;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	border-top: 3px solid #4cb7ff;
+	width: 250px;
+	height: 155px;
+	bottom: 610px;
+	left: 1065px;
+	box-shadow: 7px 7px 30px black;
+}
+
+.registerLabel {
+	position: relative;
+	bottom: 25px;
+	border-bottom: 1px solid black;
+}
+
+.usernameLabel {
+	position: relative;
+	right: 95px;
+	font-size: 15px;
+	bottom: 35px;
+}
+
+.usernameInput {
+	position: relative;
+	left: 75px;
+	bottom: 72px;
+	border-radius: 5px;
+	outline: none;
+    border: 1px solid black;
+}
+
+.passwordLabel {
+	position: relative;
+	right: 95px;
+	font-size: 15px;
+	bottom: 80px;
+}
+
+.passwordInput {
+	position: relative;
+	left: 75px;
+	bottom: 117px;
+	border-radius: 5px;
+	outline: none;
+    border: 1px solid black;
+}
+
+.emailLabel {
+	position: relative;
+	right: 110px;
+	font-size: 15px;
+	bottom: 125px;
+}
+
+.emailInput {
+	position: relative;
+	left: 75px;
+	bottom: 167px;
+	border-radius: 5px;
+	outline: none;
+    border: 1px solid black;
+}
+
+.rregisterButton {
+	outline: none;
+	position: relative;
+	font-family: Comic Sans MS;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #d87306;
+	background: linear-gradient(#f79d36, #e29031);
+	border-radius: 5px;
+	bottom: 165px;
+	left: 40px;
+}
+
+.rregisterButton:active {
+	background: linear-gradient(#e29031, #f79d36);
+}
+
+.lloginButton {
+	outline: none;
+	position: relative;
+	font-family: Comic Sans MS;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #1772c1;
+	background: linear-gradient(#1a81db, #1772c1);
+	border-radius: 5px;
+	bottom: 165px;
+	left: 65px;
+}
+
+.lloginButton:active {
+	background: linear-gradient(#1772c1, #1a81db);
+}
+
+.loggedInAs {
+	display: none;
+	position: relative;
+	background: #6d6d6d;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	border-top: 3px solid #4cb7ff;
+	width: 250px;
+	height: 155px;
+	bottom: 610px;
+	left: 1065px;
+	box-shadow: 7px 7px 30px black;
+}
+
+.loggedInDataName {
+	font-family: Comic Sans MS;
+	text-align: center;
+	color: #dff931;
+}
+
+.logoutButton {
+	outline: none;
+	position: relative;
+	font-family: Comic Sans MS;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #d81a1a;
+	background: linear-gradient(#ef3232, #d82929);
+	border-radius: 5px;
+	bottom: 0px;
+	left: 90px;
+}
+
+.logoutButton:active {
+	background: linear-gradient(#d82929, #ef3232);
+}
+
+
+.sidebarContainer {
+	padding: 5px 5px 5px 5px;
+	position: relative;
+	background: #6d6d6d;
+	border-top: 3px solid #4cb7ff;
+	border-radius: 5px;
+	width: 900px;
+	height: 50px;
+	bottom: 775px;
+	left: 50px;
+	box-shadow: 7px 7px 30px black;
+}
+
+.castleButton {
+	position: relative;
+	left: 25px;
+	top: 10px;
+}
+
+.castleButton {
+	width: 100px;
+	color: white;
+	border-radius: 5px;
+	background: linear-gradient(#6d6d6d, #232323);
+	transition: .3s;
+	border: 1px solid #282828;
+	outline: none;
+	padding: 5px 10px 5px 10px;
+	font-family: Comic Sans MS;
+}
+
+.castleButton:hover {
+	color: #c1bfbf;
+	box-shadow: 5px 5px 35px gray;
+}
+
+.castleButton:active {
+	color: #999797;
+	background: linear-gradient(#232323, #6d6d6d);
+}
+
+.websitePage {
+	
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative;
+  /*bottom: 700px;*/
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
