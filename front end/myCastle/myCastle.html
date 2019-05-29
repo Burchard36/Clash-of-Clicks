@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clash of Clicks</title>
+	<link rel="stylesheet" href="myCastle.css">
+  </head>
+  
+  <body>
+  
+    <!-- Creates a small almost clear overlay-->
+    <div class="bodyOverlay"></div>
+	
+	<!-- This displays the resources and power -->
+	<div class="topbarContainer">
+	  
+	  <button class="castleButton" id="button" onclick="goToCastlePage()">Play Now!</button>
+	</div>
+	
+	<!-- Displays who you are logged in as -->
+	<div class="loggedInAs" id="loggedInAs">
+	    <h4 class="loggedInAsLabel" id="loggedInAsLabel">Logged in as:</h4>
+		<p class="loggedInDataName" id="loggedInDataName">null</p>
+		<button class="logoutButton" onclick="logout()">Logout</button>
+	</div>
+	
+	<!-- This is the chat panel -->
+	<div class="chatPanel" id="chatPanel">
+	
+	</div>
+	
+	<!-- This is the sidebar -->
+	<div class="sidebarContainer" id="sidebarContainer">
+	    <button class="worldButton" onclick="showWorldPanel()">World</button>
+	    <button class="worldButton" id="button" onclick="showBuildings()">Buildings</button>
+		<button class="worldButton">Faction</button><br/>
+		<button class="worldButton">Mail</button>
+		<button class="worldButton">Leaderboards</button>
+	</div>
+    <div class="sidebarContainer" id="sidebarBuildings" style="display: none;">
+	  <button class="worldButton" id="button" onclick="hideBuildings()">Back</button><br/>
+	  <button class="worldButton" id="button" onclick="showCastlePanel()">Castle</button>
+	  <button class="worldButton" id="button" onclick="showWatchtowerPanel()">Watchtower</button>
+	  <button class="worldButton" id="button" onclick="showBarracksPanel()">Barracks</button>
+	  <button class="worldButton" id="button" onclick="showStablesPanel()">Stables</button>
+	  <button class="worldButton" id="button" onclick="showRangePanel()">Range</button>
+	  <button class="worldButton" id="button" onclick="showSiegePanel()">Siege Factory</button>
+	  <button class="worldButton" id="button" onclick="showTrapPanel()">Trap Factory</button>
+	  <button class="worldButton" id="button" onclick="showEmbassyPanel()">Embassy</button>
+	  <button class="worldButton" id="button" onclick="showCollegePanel()">College</button>
+    </div>
+	
+	<div class="worldPanel" id="worldPanel">
+	   <h4>World Panel</h4>
+	</div>
+    <div class="castlePanel" id="castlePanel">
+	   <h4>Castle Panel</h4>
+	</div>
+    <div class="watchtowerPanel" id="watchtowerPanel">
+	   <h4>Watchtower Panel</h4>
+	</div>
+    <div class="barracksPanel" id="barracksPanel">
+	   <h4>Barracks Panel</h4>
+	</div>
+	<div class="stablesPanel" id="stablesPanel">
+	   <h4>Stables Panel</h4>
+	</div>
+    <div class="rangePanel" id="rangePanel">
+	   <h4>Range Panel</h4>
+	</div>
+	<div class="siegePanel" id="siegePanel">
+	   <h4>Siege Panel</h4>
+	</div>
+	<div class="trapPanel" id="trapPanel">
+	   <h4>Trap Panel</h4>
+	</div>
+	<div class="embassyPanel" id="embassyPanel">
+	   <h4>Embassy Panel</h4>
+	</div>
+	<div class="collegePanel" id="collegePanel">
+	   <h4>College Panel</h4>
+	</div>
+	
+    <!-- This is for JQuery import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<!-- This is our own javascript-->
+	<script src="myCastle.js"></script>
+  </body>
+</html>
